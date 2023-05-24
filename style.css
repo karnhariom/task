@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Leckerli+One&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.curv {
+    font-family: 'Leckerli One', cursive;
+}
+
+.btn {
+    background: #00aeed;
+    color: white;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 100px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 18px;
+    /* margin-top: 40px; */
+}
+
+.btn:hover {
+    background: var(--blue);
+    /* color: var(--blue); */
+}
+
+.blogheading {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+
+:root {
+    --blue: #0081ff;
+}
+
+/* navbar */
+
+.navbar {
+    padding: 0;
+    transition: all 0.3s linear;
+    z-index: 999;
+}
+
+.navbar.navbg {
+    background-color: black;
+}
+
+.navbar-toggler {
+    background: white;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand span {
+    color: var(--blue);
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-item .nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 20px 0;
+    border: 5px solid transparent;
+    margin: 0 10px;
+}
+
+.nav-item .nav-link:hover {
+    color: white;
+    border-top: 5px solid var(--blue);
+}
+
+
+
+/* herosection */
+
+.heroSection {
+    padding: 100px 0;
+    background: url(./images/bg.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.heroSection .herotitle {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.heroSection .herotitle span {
+    color: var(--blue);
+}
+
+.heroSection .desg {
+    font-weight: 600;
+}
+
+.heroSection p {
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.heroSection .btn {
+    margin-top: 40px;
+}
+
+.heroSection img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    animation: imgmove 3s infinite linear alternate-reverse;
+}
+
+@keyframes imgmove {
+    0%{
+        transform: translateY(-50px);
+    }   
+
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+/* about */
+
+.about {
+    background-color: var(--blue);
+    color: white;
+    padding: 80px 0;
+}
+
+/* service */
+
+.service {
+    padding: 80px 0;
+    background: #007af3;
+    color: white;
+}
+
+.service .servbox {
+    margin: 35px;
+}
+
+.service .servbox {
+    display: flex;
+    align-items: top;
+    gap: 15px;
+}
+
+.service .servbox .iconbox i {
+    font-size: 40px;
+}
+
+.service .servbox .detail h4 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.service .servbox .detail p {
+    margin-top: 15px;
+}
+
+/* portfolio  */
+
+.portfolio {
+    padding-top: 80px;
+}
+
+.portimages {
+    padding: 0;
+}
+
+.portimages .row {
+    margin: 0;
+    padding: 0;
+}
+
+.portimages .row>* {
+    padding: 0;
+}
+
+/* client */
+
+.client {
+    padding: 80px 0;
+    background: url(./images/clientbg.png);
+    background-size: cover;
+    color: white;
+}
+
+.client p {
+    max-width: 50vw;
+    margin: auto;
+}
+
+.client .clientlogos img {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+/* blog */
+
+.blogs {
+    padding: 80px 0;
+}
+
+.blogs .lefttop .blog1 {
+    background-color: #007af3;
+    padding: 20px;
+    color: white;
+}
+
+.blogs .righttop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url(./images/blogbg.png) rgba(0, 0, 0, 0.064);
+    background-blend-mode: color;
+    color: white;
+    height: 100%;
+    padding: 40px;
+}
+
+.blogs .downblog1 {
+    background: #eaeaea;
+    color: black;
+    padding: 20px;
+    height: 100%;
+}
+
+.blogs .downblog2 {
+    background: black;
+    color: white;
+    padding: 20px;
+    height: 100%;
+}
+
+.blogs .downblog3 {
+    background: #e91d62;
+    color: white;
+    padding: 20px;
+}
+
+/* contact */
+
+.contact {
+    padding: 100px 0 50px;
+    background: url(./images/contact\ bg.png);
+    color: white;
+}
+
+.contact .iconboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.contact .iconboxes .iconbox {
+    display: flex;
+    gap: 15px;
+}
+
+.contact .iconboxes .iconbox i {
+    font-size: 30px;
+}
+
+.contact .iconboxes .iconbox h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact .iconboxes .iconbox p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.contact .formbox form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 60px;
+}
+
+.contact .formbox form .inpfield {
+    display: flex;
+    align-items: center;
+}
+
+.contact .formbox form .inpfield label {
+    min-width: 80px;
+}
+
+.contact .formbox form .inpfield input,
+.contact .formbox form .inpfield textarea {
+    background: #2b2b2b;
+    border: none;
+    outline: none;
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    resize: none;
+    color: white;
+}
+
+.contact .formbox form button {
+    background-color: #007af3;
+    color: white;
+    padding: 5px 20px;
+    margin-left: 80px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 70px 0;
+}
+
+.social .icon {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: grid;
+    place-content: center;
+}
+
+.social .icon i {
+    font-size: 20px;
+    color: white;
+}
+
+
+@media (max-width: 990px) {
+    .navbar {
+        background: black;
+    }
+
+    .nav-item .nav-link,
+    .nav-item .nav-link:hover {
+        color: white;
+        border: none;
+    }
+}
